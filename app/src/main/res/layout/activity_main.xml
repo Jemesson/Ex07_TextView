@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:text="Jemesson Lima\nEmail: jemessonlima@gmail.com\nFone:88990099\nhttp://ngaluber.blogspot.com"
+        android:autoLink="phone|email|web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAutoLink" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto bem grande para não caber em uma linha nem em duas"
+        android:textSize="24sp"
+        android:ellipsize="end"
+        android:maxLines="2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fonte Monospace"
+        android:textSize="20sp"
+        android:typeface="monospace" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fonte Customizada thin"
+        android:textSize="20sp"
+        android:id="@+id/txtFonte1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fonte customizada Condensed"
+        android:textSize="20sp"
+        android:id="@+id/txtFonte2" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fonte strike"
+        android:textSize="20sp"
+        android:id="@+id/txtStrike" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHtml" />
+</LinearLayout>
