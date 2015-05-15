@@ -23,20 +23,20 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Typeface typefaceLight = Typeface.createFromAsset(getAssets(), "Roboto-Light.ttf");
-        Typeface typefaceCondensed = Typeface.createFromAsset(getAssets(), "RobotoCondensed-Regular.ttf");
+        Typeface light = Typeface.createFromAsset(getAssets(), "Roboto-Light.ttf");
+        Typeface condensed = Typeface.createFromAsset(getAssets(), "RobotoCondensed-Regular.ttf");
 
         TextView txt1 = (TextView)findViewById(R.id.txtFonte1);
-        txt1.setTypeface(typefaceLight);
+        txt1.setTypeface(light);
 
         TextView txt2 = (TextView)findViewById(R.id.txtFonte2);
-        txt2.setTypeface(typefaceCondensed);
+        txt2.setTypeface(condensed);
 
-        TextView txtStrike = (TextView)findViewById(R.id.txtStrike);
-        txtStrike.setPaintFlags(txtStrike.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
+        TextView txt3 = (TextView)findViewById(R.id.txtStrike);
+        txt3.setPaintFlags(txt3.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
 
         TextView txtHtml = (TextView)findViewById(R.id.txtHtml);
-        final String textoEmHtml =
+        final String html =
                 "<html>" +
                 "<body>" +
                 "<b>Negrito</b>, <i>Itálico</i>" +
@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
             }
         };
 
-        txtHtml.setText(Html.fromHtml(textoEmHtml, imageGetter, null));
+        txtHtml.setText(Html.fromHtml(html, imageGetter, null));
     }
 
     @Override
